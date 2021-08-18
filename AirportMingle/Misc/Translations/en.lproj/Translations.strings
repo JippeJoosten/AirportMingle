@@ -1,0 +1,21 @@
+/* 
+  Translations.strings
+  AirportMingle
+
+  Created by Jippe Joosten on 18/08/2021.
+  
+*/
+
+"tabbar.mapTitle" = "Map";
+"tabbar.reachTitle" = "Reach";
+"tabbar.settingsTitle" = "Settings";
+
+"map.navigationTitle" = "World map";
+
+"reach.navigationTitle" = "Reach";
+
+"settings.navigationTitle" = "Settings";
+"settings.distanceUnits" = "Distance units";
+"settings.distanceUnits.automatic" = "Automatic";
+"settings.distanceUnits.kilometers" = "Kilometers";
+"settings.distanceUnits.miles" = "Miles";

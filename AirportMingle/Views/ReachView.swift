@@ -1,5 +1,5 @@
 //
-//  SettingsView.swift
+//  ReachView.swift
 //  AirportMingle
 //
 //  Created by Jippe Joosten on 18/08/2021.
@@ -7,19 +7,19 @@
 
 import SwiftUI
 
-struct SettingsView: View {
+struct ReachView: View {
     var body: some View {
         NavigationView {
             List {
-                Text(L10n.Settings.distanceUnits)
+                Text("Amsterdam")
             }
-            .navigationTitle(L10n.Settings.navigationTitle)
+            .navigationTitle(L10n.Reach.navigationTitle)
         }
     }
 }
 
-struct SettingsView_Previews: PreviewProvider {
+struct ReachView_Previews: PreviewProvider {
     static var previews: some View {
-        SettingsView()
+        ReachView()
     }
 }

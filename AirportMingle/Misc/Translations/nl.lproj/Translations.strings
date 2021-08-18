@@ -1,0 +1,22 @@
+/* 
+  Translations.strings
+  AirportMingle
+
+  Created by Jippe Joosten on 18/08/2021.
+  
+*/
+
+"tabbar.mapTitle" = "Kaart";
+"tabbar.reachTitle" = "Bereik";
+"tabbar.settingsTitle" = "Instellingen";
+
+"map.navigationTitle" = "Wereld kaart";
+
+"reach.navigationTitle" = "Bereik";
+
+"settings.navigationTitle" = "Instellingen";
+"settings.distanceUnits" = "Afstandseenheid";
+"settings.distanceUnits.automatic" = "Automatisch";
+"settings.distanceUnits.kilometers" = "Kilometers";
+"settings.distanceUnits.miles" = "Mijlen";
+

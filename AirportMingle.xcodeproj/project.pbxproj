@@ -10,8 +10,11 @@
 		F3EF889226CD483D00575F65 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EF889126CD483D00575F65 /* MainView.swift */; };
 		F3EF889426CD485500575F65 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EF889326CD485500575F65 /* MapView.swift */; };
 		F3EF889626CD486500575F65 /* AirportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EF889526CD486500575F65 /* AirportView.swift */; };
-		F3EF889826CD487300575F65 /* AirportsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EF889726CD487300575F65 /* AirportsView.swift */; };
+		F3EF889826CD487300575F65 /* ReachView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EF889726CD487300575F65 /* ReachView.swift */; };
 		F3EF889A26CD487D00575F65 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EF889926CD487D00575F65 /* SettingsView.swift */; };
+		F3EF889E26CD4E3500575F65 /* Translations.strings in Resources */ = {isa = PBXBuildFile; fileRef = F3EF88A026CD4E3500575F65 /* Translations.strings */; };
+		F3EF88A426CD507600575F65 /* Translations.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EF88A326CD507600575F65 /* Translations.swift */; };
+		F3EF88AC26CD524D00575F65 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EF88AB26CD524D00575F65 /* Assets.swift */; };
 		F3F9E1F126CD459B0051C96E /* AirportMingleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F9E1F026CD459B0051C96E /* AirportMingleApp.swift */; };
 		F3F9E1F526CD459D0051C96E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3F9E1F426CD459D0051C96E /* Assets.xcassets */; };
 		F3F9E1F826CD459D0051C96E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3F9E1F726CD459D0051C96E /* Preview Assets.xcassets */; };
@@ -40,8 +43,13 @@
 		F3EF889126CD483D00575F65 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		F3EF889326CD485500575F65 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		F3EF889526CD486500575F65 /* AirportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportView.swift; sourceTree = "<group>"; };
-		F3EF889726CD487300575F65 /* AirportsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportsView.swift; sourceTree = "<group>"; };
+		F3EF889726CD487300575F65 /* ReachView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachView.swift; sourceTree = "<group>"; };
 		F3EF889926CD487D00575F65 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		F3EF889F26CD4E3500575F65 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Translations.strings; sourceTree = "<group>"; };
+		F3EF88A126CD4E3900575F65 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Translations.strings; sourceTree = "<group>"; };
+		F3EF88A326CD507600575F65 /* Translations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Translations.swift; sourceTree = "<group>"; };
+		F3EF88A826CD511400575F65 /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
+		F3EF88AB26CD524D00575F65 /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		F3F9E1ED26CD459B0051C96E /* AirportMingle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirportMingle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3F9E1F026CD459B0051C96E /* AirportMingleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportMingleApp.swift; sourceTree = "<group>"; };
 		F3F9E1F426CD459D0051C96E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -83,6 +91,7 @@
 		F3EF888F26CD475600575F65 /* Misc */ = {
 			isa = PBXGroup;
 			children = (
+				F3EF88AA26CD51D600575F65 /* Translations */,
 				F3F9E1F926CD459D0051C96E /* Info.plist */,
 				F3F9E1F426CD459D0051C96E /* Assets.xcassets */,
 				F3F9E1F626CD459D0051C96E /* Preview Content */,
@@ -96,10 +105,44 @@
 				F3EF889126CD483D00575F65 /* MainView.swift */,
 				F3EF889326CD485500575F65 /* MapView.swift */,
 				F3EF889526CD486500575F65 /* AirportView.swift */,
-				F3EF889726CD487300575F65 /* AirportsView.swift */,
+				F3EF889726CD487300575F65 /* ReachView.swift */,
 				F3EF889926CD487D00575F65 /* SettingsView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		F3EF88A226CD505D00575F65 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				F3EF88A626CD50E700575F65 /* SwiftGen */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
+		F3EF88A626CD50E700575F65 /* SwiftGen */ = {
+			isa = PBXGroup;
+			children = (
+				F3EF88A726CD511400575F65 /* Config */,
+				F3EF88A326CD507600575F65 /* Translations.swift */,
+				F3EF88AB26CD524D00575F65 /* Assets.swift */,
+			);
+			path = SwiftGen;
+			sourceTree = "<group>";
+		};
+		F3EF88A726CD511400575F65 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				F3EF88A826CD511400575F65 /* swiftgen.yml */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		F3EF88AA26CD51D600575F65 /* Translations */ = {
+			isa = PBXGroup;
+			children = (
+				F3EF88A026CD4E3500575F65 /* Translations.strings */,
+			);
+			path = Translations;
 			sourceTree = "<group>";
 		};
 		F3F9E1E426CD459B0051C96E = {
@@ -127,6 +170,7 @@
 			children = (
 				F3F9E1F026CD459B0051C96E /* AirportMingleApp.swift */,
 				F3EF889026CD482F00575F65 /* Views */,
+				F3EF88A226CD505D00575F65 /* Generated */,
 				F3EF888F26CD475600575F65 /* Misc */,
 			);
 			path = AirportMingle;
@@ -165,6 +209,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F3F9E21226CD459D0051C96E /* Build configuration list for PBXNativeTarget "AirportMingle" */;
 			buildPhases = (
+				F3EF88A526CD50B200575F65 /* SwiftGen */,
 				F3F9E1E926CD459B0051C96E /* Sources */,
 				F3F9E1EA26CD459B0051C96E /* Frameworks */,
 				F3F9E1EB26CD459B0051C96E /* Resources */,
@@ -243,6 +288,7 @@
 			knownRegions = (
 				en,
 				Base,
+				nl,
 			);
 			mainGroup = F3F9E1E426CD459B0051C96E;
 			productRefGroup = F3F9E1EE26CD459B0051C96E /* Products */;
@@ -262,6 +308,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3F9E1F826CD459D0051C96E /* Preview Assets.xcassets in Resources */,
+				F3EF889E26CD4E3500575F65 /* Translations.strings in Resources */,
 				F3F9E1F526CD459D0051C96E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +329,27 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		F3EF88A526CD50B200575F65 /* SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftGen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "swiftgen config run --config AirportMingle/Generated/SwiftGen/Config/swiftgen.yml;\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F3F9E1E926CD459B0051C96E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -289,10 +357,12 @@
 			files = (
 				F3EF889626CD486500575F65 /* AirportView.swift in Sources */,
 				F3EF889226CD483D00575F65 /* MainView.swift in Sources */,
-				F3EF889826CD487300575F65 /* AirportsView.swift in Sources */,
+				F3EF88AC26CD524D00575F65 /* Assets.swift in Sources */,
+				F3EF889826CD487300575F65 /* ReachView.swift in Sources */,
 				F3EF889A26CD487D00575F65 /* SettingsView.swift in Sources */,
 				F3EF889426CD485500575F65 /* MapView.swift in Sources */,
 				F3F9E1F126CD459B0051C96E /* AirportMingleApp.swift in Sources */,
+				F3EF88A426CD507600575F65 /* Translations.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +396,18 @@
 			targetProxy = F3F9E20A26CD459D0051C96E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F3EF88A026CD4E3500575F65 /* Translations.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3EF889F26CD4E3500575F65 /* en */,
+				F3EF88A126CD4E3900575F65 /* nl */,
+			);
+			name = Translations.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		F3F9E21026CD459D0051C96E /* Debug */ = {

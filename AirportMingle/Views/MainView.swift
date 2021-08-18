@@ -12,15 +12,15 @@ struct MainView: View {
         TabView {
             MapView()
                 .tabItem {
-                    Label("Map", systemImage: "map")
+                    Label(L10n.Tabbar.mapTitle, systemImage: "map")
                 }
-            AirportsView()
+            ReachView()
                 .tabItem {
-                    Label("Reach", systemImage: "airplane")
+                    Label(L10n.Tabbar.reachTitle, systemImage: "airplane")
                 }
             SettingsView()
                 .tabItem {
-                    Label("Settings", systemImage: "gear")
+                    Label(L10n.Tabbar.settingsTitle, systemImage: "gear")
                 }
         }
     }
