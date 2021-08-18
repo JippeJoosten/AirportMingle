@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F3EF889226CD483D00575F65 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EF889126CD483D00575F65 /* MainView.swift */; };
+		F3EF889426CD485500575F65 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EF889326CD485500575F65 /* MapView.swift */; };
+		F3EF889626CD486500575F65 /* AirportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EF889526CD486500575F65 /* AirportView.swift */; };
+		F3EF889826CD487300575F65 /* AirportsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EF889726CD487300575F65 /* AirportsView.swift */; };
+		F3EF889A26CD487D00575F65 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EF889926CD487D00575F65 /* SettingsView.swift */; };
 		F3F9E1F126CD459B0051C96E /* AirportMingleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F9E1F026CD459B0051C96E /* AirportMingleApp.swift */; };
-		F3F9E1F326CD459B0051C96E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F9E1F226CD459B0051C96E /* ContentView.swift */; };
 		F3F9E1F526CD459D0051C96E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3F9E1F426CD459D0051C96E /* Assets.xcassets */; };
 		F3F9E1F826CD459D0051C96E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3F9E1F726CD459D0051C96E /* Preview Assets.xcassets */; };
 		F3F9E20326CD459D0051C96E /* AirportMingleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F9E20226CD459D0051C96E /* AirportMingleTests.swift */; };
@@ -33,9 +37,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F3EF889126CD483D00575F65 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		F3EF889326CD485500575F65 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		F3EF889526CD486500575F65 /* AirportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportView.swift; sourceTree = "<group>"; };
+		F3EF889726CD487300575F65 /* AirportsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportsView.swift; sourceTree = "<group>"; };
+		F3EF889926CD487D00575F65 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		F3F9E1ED26CD459B0051C96E /* AirportMingle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirportMingle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3F9E1F026CD459B0051C96E /* AirportMingleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportMingleApp.swift; sourceTree = "<group>"; };
-		F3F9E1F226CD459B0051C96E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F3F9E1F426CD459D0051C96E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3F9E1F726CD459D0051C96E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F3F9E1F926CD459D0051C96E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -72,6 +80,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F3EF888F26CD475600575F65 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				F3F9E1F926CD459D0051C96E /* Info.plist */,
+				F3F9E1F426CD459D0051C96E /* Assets.xcassets */,
+				F3F9E1F626CD459D0051C96E /* Preview Content */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		F3EF889026CD482F00575F65 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F3EF889126CD483D00575F65 /* MainView.swift */,
+				F3EF889326CD485500575F65 /* MapView.swift */,
+				F3EF889526CD486500575F65 /* AirportView.swift */,
+				F3EF889726CD487300575F65 /* AirportsView.swift */,
+				F3EF889926CD487D00575F65 /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		F3F9E1E426CD459B0051C96E = {
 			isa = PBXGroup;
 			children = (
@@ -96,10 +126,8 @@
 			isa = PBXGroup;
 			children = (
 				F3F9E1F026CD459B0051C96E /* AirportMingleApp.swift */,
-				F3F9E1F226CD459B0051C96E /* ContentView.swift */,
-				F3F9E1F426CD459D0051C96E /* Assets.xcassets */,
-				F3F9E1F926CD459D0051C96E /* Info.plist */,
-				F3F9E1F626CD459D0051C96E /* Preview Content */,
+				F3EF889026CD482F00575F65 /* Views */,
+				F3EF888F26CD475600575F65 /* Misc */,
 			);
 			path = AirportMingle;
 			sourceTree = "<group>";
@@ -259,7 +287,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3F9E1F326CD459B0051C96E /* ContentView.swift in Sources */,
+				F3EF889626CD486500575F65 /* AirportView.swift in Sources */,
+				F3EF889226CD483D00575F65 /* MainView.swift in Sources */,
+				F3EF889826CD487300575F65 /* AirportsView.swift in Sources */,
+				F3EF889A26CD487D00575F65 /* SettingsView.swift in Sources */,
+				F3EF889426CD485500575F65 /* MapView.swift in Sources */,
 				F3F9E1F126CD459B0051C96E /* AirportMingleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,10 +450,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"AirportMingle/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"AirportMingle/Misc/Preview Content\"";
 				DEVELOPMENT_TEAM = 75P259TU67;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = AirportMingle/Info.plist;
+				INFOPLIST_FILE = AirportMingle/Misc/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -440,10 +472,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"AirportMingle/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"AirportMingle/Misc/Preview Content\"";
 				DEVELOPMENT_TEAM = 75P259TU67;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = AirportMingle/Info.plist;
+				INFOPLIST_FILE = AirportMingle/Misc/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
