@@ -11,14 +11,19 @@ import Foundation
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 internal enum L10n {
 
+  internal enum Airport {
+    /// Airport
+    internal static let navigationTitle = L10n.tr("Translations", "airport.navigationTitle")
+  }
+
+  internal enum Connections {
+    /// Connections
+    internal static let navigationTitle = L10n.tr("Translations", "connections.navigationTitle")
+  }
+
   internal enum Map {
     /// World map
     internal static let navigationTitle = L10n.tr("Translations", "map.navigationTitle")
-  }
-
-  internal enum Reach {
-    /// Reach
-    internal static let navigationTitle = L10n.tr("Translations", "reach.navigationTitle")
   }
 
   internal enum Settings {
@@ -37,10 +42,10 @@ internal enum L10n {
   }
 
   internal enum Tabbar {
+    /// Connetions
+    internal static let connectionsTitle = L10n.tr("Translations", "tabbar.connectionsTitle")
     /// Map
     internal static let mapTitle = L10n.tr("Translations", "tabbar.mapTitle")
-    /// Reach
-    internal static let reachTitle = L10n.tr("Translations", "tabbar.reachTitle")
     /// Settings
     internal static let settingsTitle = L10n.tr("Translations", "tabbar.settingsTitle")
   }

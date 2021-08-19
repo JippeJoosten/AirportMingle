@@ -7,12 +7,14 @@
 */
 
 "tabbar.mapTitle" = "Kaart";
-"tabbar.reachTitle" = "Bereik";
+"tabbar.connectionsTitle" = "Connecties";
 "tabbar.settingsTitle" = "Instellingen";
 
 "map.navigationTitle" = "Wereld kaart";
 
-"reach.navigationTitle" = "Bereik";
+"airport.navigationTitle" = "Luchthaven";
+
+"connections.navigationTitle" = "Connecties";
 
 "settings.navigationTitle" = "Instellingen";
 "settings.distanceUnits" = "Afstandseenheid";

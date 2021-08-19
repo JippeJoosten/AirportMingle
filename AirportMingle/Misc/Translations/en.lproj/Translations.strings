@@ -7,12 +7,14 @@
 */
 
 "tabbar.mapTitle" = "Map";
-"tabbar.reachTitle" = "Reach";
+"tabbar.connectionsTitle" = "Connetions";
 "tabbar.settingsTitle" = "Settings";
 
 "map.navigationTitle" = "World map";
 
-"reach.navigationTitle" = "Reach";
+"airport.navigationTitle" = "Airport";
+
+"connections.navigationTitle" = "Connections";
 
 "settings.navigationTitle" = "Settings";
 "settings.distanceUnits" = "Distance units";

@@ -7,14 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F3DB712726CE7670002D8626 /* MapHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DB712626CE7670002D8626 /* MapHelper.swift */; };
+		F3DB712A26CE93FC002D8626 /* AirportAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DB712926CE93FC002D8626 /* AirportAnnotation.swift */; };
+		F3DB712D26CE99C7002D8626 /* TitleDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DB712C26CE99C7002D8626 /* TitleDetailCell.swift */; };
 		F3EF889226CD483D00575F65 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EF889126CD483D00575F65 /* MainView.swift */; };
 		F3EF889426CD485500575F65 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EF889326CD485500575F65 /* MapView.swift */; };
 		F3EF889626CD486500575F65 /* AirportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EF889526CD486500575F65 /* AirportView.swift */; };
-		F3EF889826CD487300575F65 /* ReachView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EF889726CD487300575F65 /* ReachView.swift */; };
+		F3EF889826CD487300575F65 /* ConnectionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EF889726CD487300575F65 /* ConnectionsView.swift */; };
 		F3EF889A26CD487D00575F65 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EF889926CD487D00575F65 /* SettingsView.swift */; };
 		F3EF889E26CD4E3500575F65 /* Translations.strings in Resources */ = {isa = PBXBuildFile; fileRef = F3EF88A026CD4E3500575F65 /* Translations.strings */; };
 		F3EF88A426CD507600575F65 /* Translations.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EF88A326CD507600575F65 /* Translations.swift */; };
 		F3EF88AC26CD524D00575F65 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EF88AB26CD524D00575F65 /* Assets.swift */; };
+		F3EF88B026CD597D00575F65 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EF88AF26CD597D00575F65 /* ApiManager.swift */; };
+		F3EF88B226CD599500575F65 /* ApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EF88B126CD599500575F65 /* ApiRequest.swift */; };
+		F3EF88B426CD59A800575F65 /* ApiTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EF88B326CD59A800575F65 /* ApiTypes.swift */; };
+		F3EF88B826CD5A2A00575F65 /* GetAirports.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EF88B726CD5A2A00575F65 /* GetAirports.swift */; };
+		F3EF88BA26CD5A3400575F65 /* GetFlights.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EF88B926CD5A3400575F65 /* GetFlights.swift */; };
+		F3EF88BC26CD5AA400575F65 /* Airport.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EF88BB26CD5AA400575F65 /* Airport.swift */; };
+		F3EF88BE26CD5AB100575F65 /* Flight.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EF88BD26CD5AB100575F65 /* Flight.swift */; };
+		F3EF88C126CD5C1000575F65 /* FlightAssetsRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EF88C026CD5C1000575F65 /* FlightAssetsRepo.swift */; };
+		F3EF88C426CD6A7A00575F65 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EF88C326CD6A7A00575F65 /* MainViewModel.swift */; };
 		F3F9E1F126CD459B0051C96E /* AirportMingleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F9E1F026CD459B0051C96E /* AirportMingleApp.swift */; };
 		F3F9E1F526CD459D0051C96E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3F9E1F426CD459D0051C96E /* Assets.xcassets */; };
 		F3F9E1F826CD459D0051C96E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3F9E1F726CD459D0051C96E /* Preview Assets.xcassets */; };
@@ -40,16 +52,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F3DB712626CE7670002D8626 /* MapHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapHelper.swift; sourceTree = "<group>"; };
+		F3DB712926CE93FC002D8626 /* AirportAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportAnnotation.swift; sourceTree = "<group>"; };
+		F3DB712C26CE99C7002D8626 /* TitleDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleDetailCell.swift; sourceTree = "<group>"; };
 		F3EF889126CD483D00575F65 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		F3EF889326CD485500575F65 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		F3EF889526CD486500575F65 /* AirportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportView.swift; sourceTree = "<group>"; };
-		F3EF889726CD487300575F65 /* ReachView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachView.swift; sourceTree = "<group>"; };
+		F3EF889726CD487300575F65 /* ConnectionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionsView.swift; sourceTree = "<group>"; };
 		F3EF889926CD487D00575F65 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		F3EF889F26CD4E3500575F65 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Translations.strings; sourceTree = "<group>"; };
 		F3EF88A126CD4E3900575F65 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Translations.strings; sourceTree = "<group>"; };
 		F3EF88A326CD507600575F65 /* Translations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Translations.swift; sourceTree = "<group>"; };
 		F3EF88A826CD511400575F65 /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
 		F3EF88AB26CD524D00575F65 /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		F3EF88AF26CD597D00575F65 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		F3EF88B126CD599500575F65 /* ApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequest.swift; sourceTree = "<group>"; };
+		F3EF88B326CD59A800575F65 /* ApiTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiTypes.swift; sourceTree = "<group>"; };
+		F3EF88B726CD5A2A00575F65 /* GetAirports.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAirports.swift; sourceTree = "<group>"; };
+		F3EF88B926CD5A3400575F65 /* GetFlights.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetFlights.swift; sourceTree = "<group>"; };
+		F3EF88BB26CD5AA400575F65 /* Airport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airport.swift; sourceTree = "<group>"; };
+		F3EF88BD26CD5AB100575F65 /* Flight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flight.swift; sourceTree = "<group>"; };
+		F3EF88C026CD5C1000575F65 /* FlightAssetsRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightAssetsRepo.swift; sourceTree = "<group>"; };
+		F3EF88C326CD6A7A00575F65 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		F3F9E1ED26CD459B0051C96E /* AirportMingle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirportMingle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3F9E1F026CD459B0051C96E /* AirportMingleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportMingleApp.swift; sourceTree = "<group>"; };
 		F3F9E1F426CD459D0051C96E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -88,6 +112,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F3DB712526CE7666002D8626 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F3DB712626CE7670002D8626 /* MapHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F3DB712826CE93E2002D8626 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				F3EF889326CD485500575F65 /* MapView.swift */,
+				F3DB712926CE93FC002D8626 /* AirportAnnotation.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		F3DB712B26CE99BA002D8626 /* Airport */ = {
+			isa = PBXGroup;
+			children = (
+				F3EF889526CD486500575F65 /* AirportView.swift */,
+				F3DB712C26CE99C7002D8626 /* TitleDetailCell.swift */,
+			);
+			path = Airport;
+			sourceTree = "<group>";
+		};
 		F3EF888F26CD475600575F65 /* Misc */ = {
 			isa = PBXGroup;
 			children = (
@@ -102,10 +152,10 @@
 		F3EF889026CD482F00575F65 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F3DB712B26CE99BA002D8626 /* Airport */,
+				F3DB712826CE93E2002D8626 /* Map */,
 				F3EF889126CD483D00575F65 /* MainView.swift */,
-				F3EF889326CD485500575F65 /* MapView.swift */,
-				F3EF889526CD486500575F65 /* AirportView.swift */,
-				F3EF889726CD487300575F65 /* ReachView.swift */,
+				F3EF889726CD487300575F65 /* ConnectionsView.swift */,
 				F3EF889926CD487D00575F65 /* SettingsView.swift */,
 			);
 			path = Views;
@@ -145,6 +195,60 @@
 			path = Translations;
 			sourceTree = "<group>";
 		};
+		F3EF88AD26CD596800575F65 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				F3EF88AE26CD596E00575F65 /* Api */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		F3EF88AE26CD596E00575F65 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				F3EF88AF26CD597D00575F65 /* ApiManager.swift */,
+				F3EF88B126CD599500575F65 /* ApiRequest.swift */,
+				F3EF88B326CD59A800575F65 /* ApiTypes.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		F3EF88B526CD5A0600575F65 /* Repos */ = {
+			isa = PBXGroup;
+			children = (
+				F3EF88BF26CD5BF900575F65 /* Models */,
+				F3EF88B626CD5A1B00575F65 /* Requests */,
+				F3EF88C026CD5C1000575F65 /* FlightAssetsRepo.swift */,
+			);
+			path = Repos;
+			sourceTree = "<group>";
+		};
+		F3EF88B626CD5A1B00575F65 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				F3EF88B726CD5A2A00575F65 /* GetAirports.swift */,
+				F3EF88B926CD5A3400575F65 /* GetFlights.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		F3EF88BF26CD5BF900575F65 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F3EF88BB26CD5AA400575F65 /* Airport.swift */,
+				F3EF88BD26CD5AB100575F65 /* Flight.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F3EF88C226CD6A5F00575F65 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F3EF88C326CD6A7A00575F65 /* MainViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		F3F9E1E426CD459B0051C96E = {
 			isa = PBXGroup;
 			children = (
@@ -168,10 +272,14 @@
 		F3F9E1EF26CD459B0051C96E /* AirportMingle */ = {
 			isa = PBXGroup;
 			children = (
+				F3DB712526CE7666002D8626 /* Helpers */,
 				F3F9E1F026CD459B0051C96E /* AirportMingleApp.swift */,
+				F3EF88C226CD6A5F00575F65 /* ViewModels */,
+				F3EF88B526CD5A0600575F65 /* Repos */,
+				F3EF88AD26CD596800575F65 /* Managers */,
 				F3EF889026CD482F00575F65 /* Views */,
-				F3EF88A226CD505D00575F65 /* Generated */,
 				F3EF888F26CD475600575F65 /* Misc */,
+				F3EF88A226CD505D00575F65 /* Generated */,
 			);
 			path = AirportMingle;
 			sourceTree = "<group>";
@@ -219,6 +327,8 @@
 			dependencies = (
 			);
 			name = AirportMingle;
+			packageProductDependencies = (
+			);
 			productName = AirportMingle;
 			productReference = F3F9E1ED26CD459B0051C96E /* AirportMingle.app */;
 			productType = "com.apple.product-type.application";
@@ -291,6 +401,8 @@
 				nl,
 			);
 			mainGroup = F3F9E1E426CD459B0051C96E;
+			packageReferences = (
+			);
 			productRefGroup = F3F9E1EE26CD459B0051C96E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -356,12 +468,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3EF889626CD486500575F65 /* AirportView.swift in Sources */,
+				F3EF88B026CD597D00575F65 /* ApiManager.swift in Sources */,
+				F3DB712A26CE93FC002D8626 /* AirportAnnotation.swift in Sources */,
 				F3EF889226CD483D00575F65 /* MainView.swift in Sources */,
+				F3EF88BE26CD5AB100575F65 /* Flight.swift in Sources */,
+				F3EF88BC26CD5AA400575F65 /* Airport.swift in Sources */,
 				F3EF88AC26CD524D00575F65 /* Assets.swift in Sources */,
-				F3EF889826CD487300575F65 /* ReachView.swift in Sources */,
+				F3DB712726CE7670002D8626 /* MapHelper.swift in Sources */,
+				F3EF889826CD487300575F65 /* ConnectionsView.swift in Sources */,
+				F3EF88B426CD59A800575F65 /* ApiTypes.swift in Sources */,
 				F3EF889A26CD487D00575F65 /* SettingsView.swift in Sources */,
 				F3EF889426CD485500575F65 /* MapView.swift in Sources */,
+				F3EF88BA26CD5A3400575F65 /* GetFlights.swift in Sources */,
+				F3EF88C126CD5C1000575F65 /* FlightAssetsRepo.swift in Sources */,
+				F3EF88B826CD5A2A00575F65 /* GetAirports.swift in Sources */,
+				F3EF88C426CD6A7A00575F65 /* MainViewModel.swift in Sources */,
 				F3F9E1F126CD459B0051C96E /* AirportMingleApp.swift in Sources */,
+				F3DB712D26CE99C7002D8626 /* TitleDetailCell.swift in Sources */,
+				F3EF88B226CD599500575F65 /* ApiRequest.swift in Sources */,
 				F3EF88A426CD507600575F65 /* Translations.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
