@@ -17,6 +17,7 @@ struct TitleDetailCell: View {
             Spacer()
             Text(detail)
                 .foregroundColor(Color.gray)
+                .multilineTextAlignment(.trailing)
         }
     }
 }

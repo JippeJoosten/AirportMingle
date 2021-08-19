@@ -18,7 +18,7 @@ struct MapView: View {
         NavigationView {
             Map(coordinateRegion: $region, annotationItems: airports) { airport in
                 MapAnnotation(coordinate: mapHelper.getCoordinates(from: airport)) {
-                    AirportAnnotation(airport: airport)
+                    AirportAnnotation(airport: airport, airports: airports)
                 }
             }
             .navigationBarTitle(L10n.Map.navigationTitle, displayMode: .inline)

@@ -16,11 +16,20 @@ class MainViewModel: ObservableObject {
     @Published var isLoading: Bool = true
     @Published var error: Error?
 
-    @Published var mainAirport: Airport?
+    @Published var mainAirport: Airport
     @Published var airports: [Airport] = []
     @Published var flights: [Flight] = []
 
     init() {
+        mainAirport = Airport(
+            id: "AMS",
+            latitude: 52.30907,
+            longitude: 4.763385,
+            name: "Amsterdam-Schiphol Airport",
+            city: "Amsterdam",
+            countryId: "NL"
+        )
+
         reload()
     }
 
@@ -39,7 +48,7 @@ class MainViewModel: ObservableObject {
             } receiveValue: { [weak self] airports, flights in
                 guard let self = self else { return }
 
-                self.mainAirport = airports.first(where: { $0.id == self.mainAirportId })
+                self.mainAirport = airports.first(where: { $0.id == self.mainAirportId }) ?? self.mainAirport
 
                 self.airports = airports
                 self.flights = flights

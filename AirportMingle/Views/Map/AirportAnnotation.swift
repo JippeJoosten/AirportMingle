@@ -10,6 +10,7 @@ import MapKit
 
 struct AirportAnnotation: View {
     var airport: Airport
+    var airports: [Airport]
     
     var body: some View {
         ZStack {
@@ -18,7 +19,7 @@ struct AirportAnnotation: View {
                 .shadow(radius: 2, x: 2, y: 2)
             NavigationLink(
                 destination:
-                    AirportView(airport: airport)
+                    AirportView(airport: airport, airports: airports)
                     .navigationTitle(L10n.Airport.navigationTitle),
                 label: {
                     VStack {
@@ -38,6 +39,6 @@ struct AirportAnnotation: View {
 
 struct AirportAnnotation_Previews: PreviewProvider {
     static var previews: some View {
-        AirportAnnotation(airport: Airport(id: "AMS", latitude: 52.30907, longitude: 4.763385, name: "Amsterdam-Schiphol Airport", city: "Amsterdam", countryId: "NL"))
+        AirportAnnotation(airport: Airport(id: "AMS", latitude: 52.30907, longitude: 4.763385, name: "Amsterdam-Schiphol Airport", city: "Amsterdam", countryId: "NL"), airports: [])
     }
 }
