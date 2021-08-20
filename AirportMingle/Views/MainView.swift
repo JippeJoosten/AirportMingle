@@ -6,12 +6,12 @@
 //
 
 import SwiftUI
-import Lottie
 
 struct MainView: View {
     private var mapHelper = MapHelper()
 
     @EnvironmentObject private var mainViewModel: MainViewModel
+    @State private var selectedTab = 0
 
     var body: some View {
         if mainViewModel.isLoading {
@@ -25,25 +25,28 @@ struct MainView: View {
                     .font(.system(size: 64, weight: .regular))
                 Text(error.localizedDescription)
                 Button(action: { mainViewModel.reload() }, label: {
-                    Text("Retry")
+                    Text(L10n.General.retry)
                 })
             }
             .padding(.horizontal, 32.0)
 
         } else {
-            TabView {
+            TabView(selection: $selectedTab) {
                 MapView(airports: mainViewModel.airports, region: mapHelper.getDefaultRegion(from: mainViewModel.mainAirport))
                     .tabItem {
                         Label(L10n.Tabbar.mapTitle, systemImage: "map")
                     }
+                    .tag(0)
                 ConnectionsView()
                     .tabItem {
                         Label(L10n.Tabbar.connectionsTitle, systemImage: "airplane")
                     }
+                    .tag(1)
                 SettingsView()
                     .tabItem {
                         Label(L10n.Tabbar.settingsTitle, systemImage: "gear")
                     }
+                    .tag(2)
             }
         }
     }
