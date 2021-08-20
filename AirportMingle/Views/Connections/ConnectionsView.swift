@@ -11,6 +11,7 @@ struct ConnectionsView: View {
     private var connectionHelper = ConnectionHelper()
 
     @EnvironmentObject private var mainViewModel: MainViewModel
+    @AppStorage(DistanceUnits.appStorageKey) var currentDistanceUnit: DistanceUnits = .automatic
 
     var body: some View {
         NavigationView {
@@ -30,7 +31,7 @@ struct ConnectionsView: View {
                         HStack {
                             Text(airport.name)
                             Spacer()
-                            Text(connectionHelper.format(distance: connectionHelper.getDistanceBetween(first: mainViewModel.mainAirport, second: airport)))
+                            Text(connectionHelper.format(distance: connectionHelper.getDistanceBetween(first: mainViewModel.mainAirport, second: airport), unit: currentDistanceUnit.unit))
                                 .foregroundColor(Color.gray)
                         }
                     }

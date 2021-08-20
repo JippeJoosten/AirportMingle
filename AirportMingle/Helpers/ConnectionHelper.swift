@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 import CoreLocation
 import MapKit
 
@@ -34,8 +35,8 @@ class ConnectionHelper {
         return secondCoordinates.distance(from: firstCoordinates)
     }
 
-    func format(distance: CLLocationDistance) -> String {
-        formatter.units = .default
+    func format(distance: CLLocationDistance, unit: MKDistanceFormatter.Units) -> String {
+        formatter.units = unit
         return formatter.string(fromDistance: distance)
     }
 

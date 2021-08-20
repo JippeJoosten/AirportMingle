@@ -8,25 +8,30 @@
 import SwiftUI
 
 struct AirportView: View {
+    @AppStorage(DistanceUnits.appStorageKey) var currentDistanceUnit: DistanceUnits = .automatic
+
     let connectionHelper = ConnectionHelper()
     var airport: Airport
     var airports: [Airport]
 
     var body: some View {
         List {
-            Section(header: Text("Details")) {
-                TitleDetailCell(title: "Id", detail: airport.id)
-                TitleDetailCell(title: "Latitude", detail: "\(airport.latitude)")
-                TitleDetailCell(title: "Longitude", detail: "\(airport.longitude)")
+            Section(header: Text("Location")) {
                 TitleDetailCell(title: "Name", detail: airport.name)
                 TitleDetailCell(title: "City", detail: airport.city)
                 TitleDetailCell(title: "Country id", detail: airport.countryId)
             }
 
+            Section(header: Text("Details")) {
+                TitleDetailCell(title: "Id", detail: airport.id)
+                TitleDetailCell(title: "Latitude", detail: "\(airport.latitude)")
+                TitleDetailCell(title: "Longitude", detail: "\(airport.longitude)")
+            }
+
             if let nearestAirport = connectionHelper.closestAirport(from: airport, airports: airports) {
                 Section(header: Text("Nearest airport")) {
                     TitleDetailCell(title: "Name", detail: nearestAirport.name)
-                    TitleDetailCell(title: "Distance", detail: connectionHelper.format(distance: connectionHelper.getDistanceBetween(first: airport, second: nearestAirport)))
+                    TitleDetailCell(title: "Distance", detail: connectionHelper.format(distance: connectionHelper.getDistanceBetween(first: airport, second: nearestAirport), unit: currentDistanceUnit.unit))
                 }
             }
         }
