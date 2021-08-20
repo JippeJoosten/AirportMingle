@@ -12,6 +12,7 @@ struct ConnectionsView: View {
 
     @EnvironmentObject private var mainViewModel: MainViewModel
     @AppStorage(DistanceUnits.appStorageKey) var currentDistanceUnit: DistanceUnits = .automatic
+    @State var reverseList: Bool = false
 
     var body: some View {
         if mainViewModel.isLoading {
@@ -20,36 +21,40 @@ struct ConnectionsView: View {
             ErrorView(error: error)
         } else {
             NavigationView {
-                List(
-                    connectionHelper.distanceSorted(
-                        airports: connectionHelper.getAirports(
-                            from: mainViewModel.flights,
-                            airports: mainViewModel.airports
-                        ),
-                        from: mainViewModel.mainAirport
-                    )
-                ) { airport in
+                List(getSortedAirports()) { airport in
                     NavigationLink(
                         destination: AirportView(airport: airport, airports: mainViewModel.airports)
                             .navigationTitle(L10n.Airport.navigationTitle),
                         label: {
-                            HStack {
-                                Text(airport.name)
-                                Spacer()
-                                Text(connectionHelper.format(distance: connectionHelper.getDistanceBetween(first: mainViewModel.mainAirport, second: airport), unit: currentDistanceUnit.unit))
-                                    .foregroundColor(Color.gray)
-                            }
+                            TitleDetailCell(title: airport.name, detail: connectionHelper.format(distance: connectionHelper.getDistanceBetween(first: mainViewModel.mainAirport, second: airport), unit: currentDistanceUnit.unit))
                         }
                     )
                 }
                 .navigationTitle(L10n.Connections.navigationTitle)
                 .toolbar(content: {
-                    Button(action: mainViewModel.reload, label: {
-                        Image(systemName: "gobackward")
-                    })
+                    ToolbarItemGroup(placement: .navigationBarTrailing) {
+                        Button(action: { reverseList.toggle() }, label: {
+                            Image(systemName: reverseList ? "arrow.down.to.line" : "arrow.up.to.line")
+                        })
+                        Button(action: mainViewModel.reload, label: {
+                            Image(systemName: "gobackward")
+                        })
+                    }
                 })
             }
         }
+    }
+
+    func getSortedAirports() -> [Airport] {
+        let sortedAirports = connectionHelper.distanceSorted(
+            airports: connectionHelper.getAirports(
+                from: mainViewModel.flights,
+                airports: mainViewModel.airports
+            ),
+            from: mainViewModel.mainAirport
+        )
+
+        return reverseList ? sortedAirports.reversed() : sortedAirports
     }
 }
 

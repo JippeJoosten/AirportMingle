@@ -10,6 +10,7 @@ import Combine
 
 class MainViewModel: ObservableObject {
     private var cancellables = Set<AnyCancellable>()
+    private let connectionHelper = ConnectionHelper()
     private let repo = FlightAssetsRepo()
     private let mainAirportId = "AMS"
 
@@ -17,6 +18,7 @@ class MainViewModel: ObservableObject {
     @Published var error: Error?
 
     @Published var mainAirport: Airport
+    @Published var furtestAirports: (Airport, Airport)?
     @Published var airports: [Airport] = []
     @Published var flights: [Flight] = []
 
@@ -48,13 +50,18 @@ class MainViewModel: ObservableObject {
             } receiveValue: { [weak self] airports, flights in
                 guard let self = self else { return }
 
-                self.mainAirport = airports.first(where: { $0.id == self.mainAirportId }) ?? self.mainAirport
-
-                self.airports = airports
-                self.flights = flights
+                self.setMainVariables(airports: airports, flights: flights)
 
                 self.isLoading = false
             }
             .store(in: &cancellables)
+    }
+
+    private func setMainVariables(airports: [Airport], flights: [Flight]) {
+        self.airports = airports
+        self.flights = flights
+
+        mainAirport = airports.first(where: { $0.id == mainAirportId }) ?? mainAirport
+        furtestAirports = connectionHelper.airportWithMostDistance(airports: airports)
     }
 }

@@ -29,6 +29,25 @@ class ConnectionHelper {
         return closest?.airport
     }
 
+    func furtestAirport(from airport: Airport, airports: [Airport]) -> Airport? {
+        let distances = airports.map { (airport: $0, distance: getDistanceBetween(first: airport, second: $0)) }
+        let furtest = distances.max { $0.distance < $1.distance }
+        return furtest?.airport
+    }
+
+    func airportWithMostDistance(airports: [Airport]) -> (Airport, Airport)? {
+        var airportDistanceArray: [(from: Airport, to: Airport, distance: CLLocationDistance)] = []
+        for arrivalAirport in airports {
+            for destinationAirports in airports {
+                airportDistanceArray.append((arrivalAirport, destinationAirports, getDistanceBetween(first: arrivalAirport, second: destinationAirports)))
+            }
+        }
+        if let furtest = airportDistanceArray.max(by: { $0.distance < $1.distance }) {
+            return (furtest.from, furtest.to)
+        }
+        return nil
+    }
+
     func getDistanceBetween(first: Airport, second: Airport) -> CLLocationDistance {
         let firstCoordinates = CLLocation(latitude: first.latitude, longitude: first.longitude)
         let secondCoordinates = CLLocation(latitude: second.latitude, longitude: second.longitude)

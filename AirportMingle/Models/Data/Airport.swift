@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-struct Airport: Codable, Identifiable {
+struct Airport: Codable, Identifiable, Equatable {
     let id: String
 
     let latitude: Double

@@ -9,9 +9,12 @@ import SwiftUI
 
 struct LoadingView: View {
     var body: some View {
-        Image(systemName: "airplane")
-            .foregroundColor(.blue)
-            .font(.system(size: 64, weight: .regular))
+        VStack {
+            Image(systemName: "airplane")
+                .foregroundColor(.blue)
+                .font(.system(size: 64, weight: .regular))
+            ProgressView()
+        }
     }
 }
 

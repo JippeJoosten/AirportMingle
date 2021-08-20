@@ -23,7 +23,7 @@ struct MapView: View {
             NavigationView {
                 Map(coordinateRegion: $region, annotationItems: mainViewModel.airports) { airport in
                     MapAnnotation(coordinate: mapHelper.getCoordinates(from: airport)) {
-                        AirportAnnotation(airport: airport, airports: mainViewModel.airports)
+                        AirportAnnotation(airport: airport, airports: mainViewModel.airports, isHighlighted: mainViewModel.furtestAirports?.0 == airport || mainViewModel.furtestAirports?.1 == airport)
                     }
                 }
                 .navigationBarTitle(L10n.Map.navigationTitle, displayMode: .inline)
