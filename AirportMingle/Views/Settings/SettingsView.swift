@@ -15,15 +15,11 @@ struct SettingsView: View {
             List {
                 Section(header: Text(L10n.Settings.distanceUnits)) {
                     ForEach(DistanceUnits.allCases, id: \.hashValue) { unit in
-                        Button(action: { currentDistanceUnit = unit }, label: {
-                            HStack {
-                                Text(unit.name)
-                                Spacer()
-                                if unit == currentDistanceUnit {
-                                    Image(systemName: "checkmark")
-                                }
-                            }
-                        })
+                        RadioButtonCell(
+                            action: { currentDistanceUnit = unit },
+                            title: unit.name,
+                            checked: unit == currentDistanceUnit
+                        )
                     }
                 }
             }

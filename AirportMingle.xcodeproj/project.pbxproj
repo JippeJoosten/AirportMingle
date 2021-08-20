@@ -12,6 +12,7 @@
 		F3DB712D26CE99C7002D8626 /* TitleDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DB712C26CE99C7002D8626 /* TitleDetailCell.swift */; };
 		F3DB713126CE9DE2002D8626 /* ConnectionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DB713026CE9DE2002D8626 /* ConnectionHelper.swift */; };
 		F3DB713326CFA7E9002D8626 /* DistanceUnits.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DB713226CFA7E9002D8626 /* DistanceUnits.swift */; };
+		F3DB713726CFACC1002D8626 /* RadioButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DB713626CFACC1002D8626 /* RadioButtonCell.swift */; };
 		F3EF889226CD483D00575F65 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EF889126CD483D00575F65 /* MainView.swift */; };
 		F3EF889426CD485500575F65 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EF889326CD485500575F65 /* MapView.swift */; };
 		F3EF889626CD486500575F65 /* AirportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EF889526CD486500575F65 /* AirportView.swift */; };
@@ -59,6 +60,7 @@
 		F3DB712C26CE99C7002D8626 /* TitleDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleDetailCell.swift; sourceTree = "<group>"; };
 		F3DB713026CE9DE2002D8626 /* ConnectionHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionHelper.swift; sourceTree = "<group>"; };
 		F3DB713226CFA7E9002D8626 /* DistanceUnits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceUnits.swift; sourceTree = "<group>"; };
+		F3DB713626CFACC1002D8626 /* RadioButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButtonCell.swift; sourceTree = "<group>"; };
 		F3EF889126CD483D00575F65 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		F3EF889326CD485500575F65 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		F3EF889526CD486500575F65 /* AirportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportView.swift; sourceTree = "<group>"; };
@@ -138,7 +140,6 @@
 			isa = PBXGroup;
 			children = (
 				F3EF889526CD486500575F65 /* AirportView.swift */,
-				F3DB712C26CE99C7002D8626 /* TitleDetailCell.swift */,
 			);
 			path = Airport;
 			sourceTree = "<group>";
@@ -155,9 +156,42 @@
 			isa = PBXGroup;
 			children = (
 				F3EF889926CD487D00575F65 /* SettingsView.swift */,
-				F3DB713226CFA7E9002D8626 /* DistanceUnits.swift */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		F3DB713826CFAE0D002D8626 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				F3EF88BB26CD5AA400575F65 /* Airport.swift */,
+				F3EF88BD26CD5AB100575F65 /* Flight.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		F3DB713926CFAE15002D8626 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				F3DB713226CFA7E9002D8626 /* DistanceUnits.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		F3DB713A26CFAE20002D8626 /* Generic */ = {
+			isa = PBXGroup;
+			children = (
+				F3DB713D26CFAE32002D8626 /* Cells */,
+			);
+			path = Generic;
+			sourceTree = "<group>";
+		};
+		F3DB713D26CFAE32002D8626 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F3DB712C26CE99C7002D8626 /* TitleDetailCell.swift */,
+				F3DB713626CFACC1002D8626 /* RadioButtonCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		F3EF888F26CD475600575F65 /* Misc */ = {
@@ -174,6 +208,7 @@
 		F3EF889026CD482F00575F65 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F3DB713A26CFAE20002D8626 /* Generic */,
 				F3EF889126CD483D00575F65 /* MainView.swift */,
 				F3DB712826CE93E2002D8626 /* Map */,
 				F3DB712B26CE99BA002D8626 /* Airport */,
@@ -238,7 +273,6 @@
 		F3EF88B526CD5A0600575F65 /* Repos */ = {
 			isa = PBXGroup;
 			children = (
-				F3EF88BF26CD5BF900575F65 /* Models */,
 				F3EF88B626CD5A1B00575F65 /* Requests */,
 				F3EF88C026CD5C1000575F65 /* FlightAssetsRepo.swift */,
 			);
@@ -257,8 +291,8 @@
 		F3EF88BF26CD5BF900575F65 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				F3EF88BB26CD5AA400575F65 /* Airport.swift */,
-				F3EF88BD26CD5AB100575F65 /* Flight.swift */,
+				F3DB713926CFAE15002D8626 /* General */,
+				F3DB713826CFAE0D002D8626 /* Data */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -297,6 +331,7 @@
 				F3DB712526CE7666002D8626 /* Helpers */,
 				F3F9E1F026CD459B0051C96E /* AirportMingleApp.swift */,
 				F3EF88C226CD6A5F00575F65 /* ViewModels */,
+				F3EF88BF26CD5BF900575F65 /* Models */,
 				F3EF88B526CD5A0600575F65 /* Repos */,
 				F3EF88AD26CD596800575F65 /* Managers */,
 				F3EF889026CD482F00575F65 /* Views */,
@@ -500,6 +535,7 @@
 				F3DB712726CE7670002D8626 /* MapHelper.swift in Sources */,
 				F3EF889826CD487300575F65 /* ConnectionsView.swift in Sources */,
 				F3EF88B426CD59A800575F65 /* ApiTypes.swift in Sources */,
+				F3DB713726CFACC1002D8626 /* RadioButtonCell.swift in Sources */,
 				F3EF889A26CD487D00575F65 /* SettingsView.swift in Sources */,
 				F3DB713326CFA7E9002D8626 /* DistanceUnits.swift in Sources */,
 				F3EF889426CD485500575F65 /* MapView.swift in Sources */,

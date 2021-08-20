@@ -6,6 +6,8 @@
   
 */
 
+"general.retry" = "Retry";
+
 "tabbar.mapTitle" = "Map";
 "tabbar.connectionsTitle" = "Connetions";
 "tabbar.settingsTitle" = "Settings";
@@ -13,6 +15,20 @@
 "map.navigationTitle" = "World map";
 
 "airport.navigationTitle" = "Airport";
+
+"airport.location.title" = "Location";
+"airport.location.name" = "Name";
+"airport.location.city" = "City";
+"airport.location.countryId" = "Country id";
+
+"airport.details.title" = "Details";
+"airport.details.id" = "Id";
+"airport.details.latitude" = "Latitude";
+"airport.details.longitude" = "Longitude";
+
+"airport.NearestAirport.title" = "Nearest airport";
+"airport.NearestAirport.name" = "Name";
+"airport.NearestAirport.distance" = "Distance";
 
 "connections.navigationTitle" = "Connections";
 

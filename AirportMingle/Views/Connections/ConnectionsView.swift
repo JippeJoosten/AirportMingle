@@ -38,6 +38,11 @@ struct ConnectionsView: View {
                 )
             }
             .navigationTitle(L10n.Connections.navigationTitle)
+            .toolbar(content: {
+                Button(action: mainViewModel.reload, label: {
+                    Image(systemName: "gobackward")
+                })
+            })
         }
     }
 }

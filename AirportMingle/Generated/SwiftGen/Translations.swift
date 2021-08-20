@@ -14,11 +14,44 @@ internal enum L10n {
   internal enum Airport {
     /// Airport
     internal static let navigationTitle = L10n.tr("Translations", "airport.navigationTitle")
+    internal enum NearestAirport {
+      /// Distance
+      internal static let distance = L10n.tr("Translations", "airport.NearestAirport.distance")
+      /// Name
+      internal static let name = L10n.tr("Translations", "airport.NearestAirport.name")
+      /// Nearest airport
+      internal static let title = L10n.tr("Translations", "airport.NearestAirport.title")
+    }
+    internal enum Details {
+      /// Id
+      internal static let id = L10n.tr("Translations", "airport.details.id")
+      /// Latitude
+      internal static let latitude = L10n.tr("Translations", "airport.details.latitude")
+      /// Longitude
+      internal static let longitude = L10n.tr("Translations", "airport.details.longitude")
+      /// Details
+      internal static let title = L10n.tr("Translations", "airport.details.title")
+    }
+    internal enum Location {
+      /// City
+      internal static let city = L10n.tr("Translations", "airport.location.city")
+      /// Country id
+      internal static let countryId = L10n.tr("Translations", "airport.location.countryId")
+      /// Name
+      internal static let name = L10n.tr("Translations", "airport.location.name")
+      /// Location
+      internal static let title = L10n.tr("Translations", "airport.location.title")
+    }
   }
 
   internal enum Connections {
     /// Connections
     internal static let navigationTitle = L10n.tr("Translations", "connections.navigationTitle")
+  }
+
+  internal enum General {
+    /// Retry
+    internal static let retry = L10n.tr("Translations", "general.retry")
   }
 
   internal enum Map {

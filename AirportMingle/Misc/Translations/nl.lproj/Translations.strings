@@ -6,6 +6,8 @@
   
 */
 
+"general.retry" = "Probeer opnieuw";
+
 "tabbar.mapTitle" = "Kaart";
 "tabbar.connectionsTitle" = "Connecties";
 "tabbar.settingsTitle" = "Instellingen";
@@ -13,6 +15,20 @@
 "map.navigationTitle" = "Wereld kaart";
 
 "airport.navigationTitle" = "Luchthaven";
+
+"airport.location.title" = "Locatie";
+"airport.location.name" = "Naam";
+"airport.location.city" = "Stad";
+"airport.location.countryId" = "Land id";
+
+"airport.details.title" = "Details";
+"airport.details.id" = "Id";
+"airport.details.latitude" = "Breedtegraad";
+"airport.details.longitude" = "Lengtegraad";
+
+"airport.NearestAirport.title" = "Dichtstbijzijnde luchthaven";
+"airport.NearestAirport.name" = "Naam";
+"airport.NearestAirport.distance" = "Afstand";
 
 "connections.navigationTitle" = "Connecties";
 
