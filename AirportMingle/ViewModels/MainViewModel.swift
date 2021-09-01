@@ -62,6 +62,6 @@ class MainViewModel: ObservableObject {
         self.flights = flights
 
         mainAirport = airports.first(where: { $0.id == mainAirportId }) ?? mainAirport
-        furtestAirports = connectionHelper.airportWithMostDistance(airports: airports)
+        furtestAirports = connectionHelper.getAirportsWithMostDistance(airports: airports)
     }
 }

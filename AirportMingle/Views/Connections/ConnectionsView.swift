@@ -34,7 +34,7 @@ struct ConnectionsView: View {
                 .toolbar(content: {
                     ToolbarItemGroup(placement: .navigationBarTrailing) {
                         Button(action: { reverseList.toggle() }, label: {
-                            Image(systemName: reverseList ? "arrow.down.to.line" : "arrow.up.to.line")
+                            Image(systemName: reverseList ? "decrease.quotelevel" : "increase.quotelevel")
                         })
                         Button(action: mainViewModel.reload, label: {
                             Image(systemName: "gobackward")
@@ -46,8 +46,8 @@ struct ConnectionsView: View {
     }
 
     func getSortedAirports() -> [Airport] {
-        let sortedAirports = connectionHelper.distanceSorted(
-            airports: connectionHelper.getAirports(
+        let sortedAirports = connectionHelper.getDistanceSorted(
+            airports: connectionHelper.getConnections(
                 from: mainViewModel.flights,
                 airports: mainViewModel.airports
             ),

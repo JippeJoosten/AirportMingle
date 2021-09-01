@@ -15,7 +15,7 @@ struct MainView: View {
 
     var body: some View {
         TabView(selection: $selectedTab) {
-            MapView(region: mapHelper.getDefaultRegion(from: mainViewModel.mainAirport))
+            MapView(region: mapHelper.getRegion(for: mainViewModel.mainAirport))
                 .tabItem {
                     Label(L10n.Tabbar.mapTitle, systemImage: "map")
                 }

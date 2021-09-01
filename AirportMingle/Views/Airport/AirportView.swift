@@ -28,7 +28,7 @@ struct AirportView: View {
                 TitleDetailCell(title: L10n.Airport.Details.longitude, detail: "\(airport.longitude)")
             }
 
-            if let nearestAirport = connectionHelper.closestAirport(from: airport, airports: airports) {
+            if let nearestAirport = connectionHelper.getClosestAirport(from: airport, airports: airports) {
                 Section(header: Text(L10n.Airport.NearestAirport.title)) {
                     TitleDetailCell(title: L10n.Airport.NearestAirport.name, detail: nearestAirport.name)
                     TitleDetailCell(title: L10n.Airport.NearestAirport.distance, detail: connectionHelper.format(distance: connectionHelper.getDistanceBetween(first: airport, second: nearestAirport), unit: currentDistanceUnit.unit))

@@ -13,29 +13,23 @@ import MapKit
 class ConnectionHelper {
     let formatter = MKDistanceFormatter()
 
-    func getAirports(from flights: [Flight], airports: [Airport]) -> [Airport] {
+    func getConnections(from flights: [Flight], airports: [Airport]) -> [Airport] {
         let arrivalAirportsIds = Set( flights.map { $0.arrivalAirportId } )
         return arrivalAirportsIds.compactMap { getArrivalAirport(from: $0, airports: airports) }
     }
 
-    func distanceSorted(airports: [Airport], from airport: Airport) -> [Airport] {
+    func getDistanceSorted(airports: [Airport], from airport: Airport) -> [Airport] {
         return airports.sorted { getDistanceBetween(first: airport, second: $0) < getDistanceBetween(first: airport, second: $1) }
     }
 
-    func closestAirport(from airport: Airport, airports: [Airport]) -> Airport? {
+    func getClosestAirport(from airport: Airport, airports: [Airport]) -> Airport? {
         let otherAirports = airports.filter { $0.id != airport.id }
         let distances = otherAirports.map { (airport: $0, distance: getDistanceBetween(first: airport, second: $0)) }
         let closest = distances.min { $0.distance < $1.distance }
         return closest?.airport
     }
 
-    func furtestAirport(from airport: Airport, airports: [Airport]) -> Airport? {
-        let distances = airports.map { (airport: $0, distance: getDistanceBetween(first: airport, second: $0)) }
-        let furtest = distances.max { $0.distance < $1.distance }
-        return furtest?.airport
-    }
-
-    func airportWithMostDistance(airports: [Airport]) -> (Airport, Airport)? {
+    func getAirportsWithMostDistance(airports: [Airport]) -> (Airport, Airport)? {
         var airportDistanceArray: [(from: Airport, to: Airport, distance: CLLocationDistance)] = []
         for arrivalAirport in airports {
             for destinationAirports in airports {

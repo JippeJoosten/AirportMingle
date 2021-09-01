@@ -10,8 +10,8 @@ import MapKit
 
 struct MapView: View {
     private let mapHelper = MapHelper()
-    @EnvironmentObject private var mainViewModel: MainViewModel
 
+    @EnvironmentObject private var mainViewModel: MainViewModel
     @State var region: MKCoordinateRegion
 
     var body: some View {

@@ -15,6 +15,14 @@
 		F3DB713726CFACC1002D8626 /* RadioButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DB713626CFACC1002D8626 /* RadioButtonCell.swift */; };
 		F3DB713F26CFB37D002D8626 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DB713E26CFB37D002D8626 /* LoadingView.swift */; };
 		F3DB714126CFB39E002D8626 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DB714026CFB39E002D8626 /* ErrorView.swift */; };
+		F3DFE11626DCDAA200AA886F /* MapHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DFE11526DCDAA200AA886F /* MapHelperTests.swift */; };
+		F3DFE11926DCE25B00AA886F /* ConnectionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DB713026CE9DE2002D8626 /* ConnectionHelper.swift */; };
+		F3DFE11A26DCE25B00AA886F /* MapHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DB712626CE7670002D8626 /* MapHelper.swift */; };
+		F3DFE11B26DCE45C00AA886F /* Airport.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EF88BB26CD5AA400575F65 /* Airport.swift */; };
+		F3DFE11C26DCE45C00AA886F /* DistanceUnits.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DB713226CFA7E9002D8626 /* DistanceUnits.swift */; };
+		F3DFE11D26DCE45C00AA886F /* Flight.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EF88BD26CD5AB100575F65 /* Flight.swift */; };
+		F3DFE11E26DCE46E00AA886F /* Translations.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EF88A326CD507600575F65 /* Translations.swift */; };
+		F3DFE12026DCE6A300AA886F /* ConnectionHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DFE11F26DCE6A300AA886F /* ConnectionHelperTests.swift */; };
 		F3EF889226CD483D00575F65 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EF889126CD483D00575F65 /* MainView.swift */; };
 		F3EF889426CD485500575F65 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EF889326CD485500575F65 /* MapView.swift */; };
 		F3EF889626CD486500575F65 /* AirportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EF889526CD486500575F65 /* AirportView.swift */; };
@@ -32,6 +40,7 @@
 		F3EF88BE26CD5AB100575F65 /* Flight.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EF88BD26CD5AB100575F65 /* Flight.swift */; };
 		F3EF88C126CD5C1000575F65 /* FlightAssetsRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EF88C026CD5C1000575F65 /* FlightAssetsRepo.swift */; };
 		F3EF88C426CD6A7A00575F65 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EF88C326CD6A7A00575F65 /* MainViewModel.swift */; };
+		F3F730EB26DFABAD001D8B03 /* MockAirports.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F730EA26DFABAD001D8B03 /* MockAirports.swift */; };
 		F3F9E1F126CD459B0051C96E /* AirportMingleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F9E1F026CD459B0051C96E /* AirportMingleApp.swift */; };
 		F3F9E1F526CD459D0051C96E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3F9E1F426CD459D0051C96E /* Assets.xcassets */; };
 		F3F9E1F826CD459D0051C96E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3F9E1F726CD459D0051C96E /* Preview Assets.xcassets */; };
@@ -65,6 +74,8 @@
 		F3DB713626CFACC1002D8626 /* RadioButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButtonCell.swift; sourceTree = "<group>"; };
 		F3DB713E26CFB37D002D8626 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		F3DB714026CFB39E002D8626 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		F3DFE11526DCDAA200AA886F /* MapHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapHelperTests.swift; sourceTree = "<group>"; };
+		F3DFE11F26DCE6A300AA886F /* ConnectionHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionHelperTests.swift; sourceTree = "<group>"; };
 		F3EF889126CD483D00575F65 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		F3EF889326CD485500575F65 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		F3EF889526CD486500575F65 /* AirportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportView.swift; sourceTree = "<group>"; };
@@ -84,6 +95,7 @@
 		F3EF88BD26CD5AB100575F65 /* Flight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flight.swift; sourceTree = "<group>"; };
 		F3EF88C026CD5C1000575F65 /* FlightAssetsRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightAssetsRepo.swift; sourceTree = "<group>"; };
 		F3EF88C326CD6A7A00575F65 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		F3F730EA26DFABAD001D8B03 /* MockAirports.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAirports.swift; sourceTree = "<group>"; };
 		F3F9E1ED26CD459B0051C96E /* AirportMingle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirportMingle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3F9E1F026CD459B0051C96E /* AirportMingleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportMingleApp.swift; sourceTree = "<group>"; };
 		F3F9E1F426CD459D0051C96E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -200,6 +212,15 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		F3DFE11426DCDA8900AA886F /* HelperTests */ = {
+			isa = PBXGroup;
+			children = (
+				F3DFE11526DCDAA200AA886F /* MapHelperTests.swift */,
+				F3DFE11F26DCE6A300AA886F /* ConnectionHelperTests.swift */,
+			);
+			path = HelperTests;
+			sourceTree = "<group>";
+		};
 		F3EF888F26CD475600575F65 /* Misc */ = {
 			isa = PBXGroup;
 			children = (
@@ -258,31 +279,25 @@
 			path = Translations;
 			sourceTree = "<group>";
 		};
-		F3EF88AD26CD596800575F65 /* Managers */ = {
-			isa = PBXGroup;
-			children = (
-				F3EF88AE26CD596E00575F65 /* Api */,
-			);
-			path = Managers;
-			sourceTree = "<group>";
-		};
-		F3EF88AE26CD596E00575F65 /* Api */ = {
+		F3EF88AE26CD596E00575F65 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
 				F3EF88AF26CD597D00575F65 /* ApiManager.swift */,
 				F3EF88B126CD599500575F65 /* ApiRequest.swift */,
 				F3EF88B326CD59A800575F65 /* ApiTypes.swift */,
 			);
-			path = Api;
+			path = Manager;
 			sourceTree = "<group>";
 		};
-		F3EF88B526CD5A0600575F65 /* Repos */ = {
+		F3EF88B526CD5A0600575F65 /* Api */ = {
 			isa = PBXGroup;
 			children = (
+				F3EF88AE26CD596E00575F65 /* Manager */,
+				F3EF88BF26CD5BF900575F65 /* Models */,
 				F3EF88B626CD5A1B00575F65 /* Requests */,
 				F3EF88C026CD5C1000575F65 /* FlightAssetsRepo.swift */,
 			);
-			path = Repos;
+			path = Api;
 			sourceTree = "<group>";
 		};
 		F3EF88B626CD5A1B00575F65 /* Requests */ = {
@@ -311,6 +326,14 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		F3F730E926DFABA0001D8B03 /* MockData */ = {
+			isa = PBXGroup;
+			children = (
+				F3F730EA26DFABAD001D8B03 /* MockAirports.swift */,
+			);
+			path = MockData;
+			sourceTree = "<group>";
+		};
 		F3F9E1E426CD459B0051C96E = {
 			isa = PBXGroup;
 			children = (
@@ -334,12 +357,10 @@
 		F3F9E1EF26CD459B0051C96E /* AirportMingle */ = {
 			isa = PBXGroup;
 			children = (
-				F3DB712526CE7666002D8626 /* Helpers */,
 				F3F9E1F026CD459B0051C96E /* AirportMingleApp.swift */,
+				F3DB712526CE7666002D8626 /* Helpers */,
+				F3EF88B526CD5A0600575F65 /* Api */,
 				F3EF88C226CD6A5F00575F65 /* ViewModels */,
-				F3EF88BF26CD5BF900575F65 /* Models */,
-				F3EF88B526CD5A0600575F65 /* Repos */,
-				F3EF88AD26CD596800575F65 /* Managers */,
 				F3EF889026CD482F00575F65 /* Views */,
 				F3EF888F26CD475600575F65 /* Misc */,
 				F3EF88A226CD505D00575F65 /* Generated */,
@@ -358,6 +379,8 @@
 		F3F9E20126CD459D0051C96E /* AirportMingleTests */ = {
 			isa = PBXGroup;
 			children = (
+				F3F730E926DFABA0001D8B03 /* MockData */,
+				F3DFE11426DCDA8900AA886F /* HelperTests */,
 				F3F9E20226CD459D0051C96E /* AirportMingleTests.swift */,
 				F3F9E20426CD459D0051C96E /* Info.plist */,
 			);
@@ -562,7 +585,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3DFE11B26DCE45C00AA886F /* Airport.swift in Sources */,
+				F3DFE11A26DCE25B00AA886F /* MapHelper.swift in Sources */,
+				F3DFE11626DCDAA200AA886F /* MapHelperTests.swift in Sources */,
 				F3F9E20326CD459D0051C96E /* AirportMingleTests.swift in Sources */,
+				F3DFE11C26DCE45C00AA886F /* DistanceUnits.swift in Sources */,
+				F3DFE11926DCE25B00AA886F /* ConnectionHelper.swift in Sources */,
+				F3DFE11D26DCE45C00AA886F /* Flight.swift in Sources */,
+				F3F730EB26DFABAD001D8B03 /* MockAirports.swift in Sources */,
+				F3DFE12026DCE6A300AA886F /* ConnectionHelperTests.swift in Sources */,
+				F3DFE11E26DCE46E00AA886F /* Translations.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
