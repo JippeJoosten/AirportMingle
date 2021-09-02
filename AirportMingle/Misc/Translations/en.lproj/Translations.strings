@@ -32,7 +32,7 @@
 "airport.NearestAirport.name" = "Name";
 "airport.NearestAirport.distance" = "Distance";
 
-"connections.navigationTitle" = "Connections";
+"connections.navigationTitle" = "Schiphol connections";
 
 "settings.navigationTitle" = "Settings";
 "settings.distanceUnits" = "Distance units";
