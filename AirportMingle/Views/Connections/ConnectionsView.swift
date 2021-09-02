@@ -32,6 +32,7 @@ struct ConnectionsView: View {
                 }
                 .navigationTitle(L10n.Connections.navigationTitle)
                 .toolbar(content: {
+                    // Looked for the item group https://www.hackingwithswift.com/quick-start/swiftui/how-to-create-a-toolbar-and-add-buttons-to-it
                     ToolbarItemGroup(placement: .navigationBarTrailing) {
                         Button(action: { reverseList.toggle() }, label: {
                             Image(systemName: reverseList ? "decrease.quotelevel" : "increase.quotelevel")

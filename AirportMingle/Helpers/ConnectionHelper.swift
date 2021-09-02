@@ -11,6 +11,7 @@ import CoreLocation
 import MapKit
 
 class ConnectionHelper {
+    // Got this formatter from the Apple docs https://developer.apple.com/documentation/mapkit/mkdistanceformatter
     let formatter = MKDistanceFormatter()
 
     func getConnections(from flights: [Flight], airports: [Airport]) -> [Airport] {
@@ -29,7 +30,7 @@ class ConnectionHelper {
         return closest?.airport
     }
 
-    func getAirportsWithMostDistance(airports: [Airport]) -> (Airport, Airport)? {
+    func getAirportsWithMostDistance(from airports: [Airport]) -> (Airport, Airport)? {
         var airportDistanceArray: [(from: Airport, to: Airport, distance: CLLocationDistance)] = []
         for arrivalAirport in airports {
             for destinationAirports in airports {

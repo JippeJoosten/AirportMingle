@@ -8,6 +8,8 @@
 
 "general.retry" = "Retry";
 
+"error.somethingWentWrong" = "Something went wrong";
+
 "tabbar.mapTitle" = "Map";
 "tabbar.connectionsTitle" = "Connetions";
 "tabbar.settingsTitle" = "Settings";

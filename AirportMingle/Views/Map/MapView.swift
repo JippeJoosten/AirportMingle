@@ -21,6 +21,7 @@ struct MapView: View {
             ErrorView(error: error)
         } else {
             NavigationView {
+                // Used https://www.appcoda.com/swiftui-map/ for the info how to use a map in SwiftUI
                 Map(coordinateRegion: $region, annotationItems: mainViewModel.airports) { airport in
                     MapAnnotation(coordinate: mapHelper.getCoordinates(from: airport)) {
                         AirportAnnotation(airport: airport, airports: mainViewModel.airports, isHighlighted: mainViewModel.furtestAirports?.0 == airport || mainViewModel.furtestAirports?.1 == airport)

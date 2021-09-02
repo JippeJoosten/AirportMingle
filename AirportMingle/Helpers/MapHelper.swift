@@ -9,12 +9,12 @@ import Foundation
 import MapKit
 
 class MapHelper {
-    let defaultDelta: Double = 2
+    let defaultSpanDelta: Double = 2
     
     func getRegion(for airport: Airport) -> MKCoordinateRegion {
         return .init(
             center: getCoordinates(from: airport),
-            span: MKCoordinateSpan(latitudeDelta: defaultDelta, longitudeDelta: defaultDelta)
+            span: MKCoordinateSpan(latitudeDelta: defaultSpanDelta, longitudeDelta: defaultSpanDelta)
         )
     }
 

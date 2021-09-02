@@ -49,6 +49,11 @@ internal enum L10n {
     internal static let navigationTitle = L10n.tr("Translations", "connections.navigationTitle")
   }
 
+  internal enum Error {
+    /// Something went wrong
+    internal static let somethingWentWrong = L10n.tr("Translations", "error.somethingWentWrong")
+  }
+
   internal enum General {
     /// Retry
     internal static let retry = L10n.tr("Translations", "general.retry")

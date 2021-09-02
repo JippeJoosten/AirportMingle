@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct SettingsView: View {
+    // Got to know more about the property mapper here https://www.hackingwithswift.com/quick-start/swiftui/what-is-the-appstorage-property-wrapper
     @AppStorage(DistanceUnits.appStorageKey) var currentDistanceUnit: DistanceUnits = .automatic
 
     var body: some View {

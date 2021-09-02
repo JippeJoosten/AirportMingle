@@ -8,6 +8,8 @@
 
 "general.retry" = "Probeer opnieuw";
 
+"error.somethingWentWrong" = "Er is iets verkeerd gegaan";
+
 "tabbar.mapTitle" = "Kaart";
 "tabbar.connectionsTitle" = "Connecties";
 "tabbar.settingsTitle" = "Instellingen";

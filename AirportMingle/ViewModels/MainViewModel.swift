@@ -40,7 +40,6 @@ class MainViewModel: ObservableObject {
 
         Publishers.Zip(repo.getAirports(), repo.getFlights())
             .receive(on: DispatchQueue.main)
-
             .sink { [weak self] value in
                 guard let self = self else { return }
                 if case let .failure(error) = value {
@@ -62,6 +61,6 @@ class MainViewModel: ObservableObject {
         self.flights = flights
 
         mainAirport = airports.first(where: { $0.id == mainAirportId }) ?? mainAirport
-        furtestAirports = connectionHelper.getAirportsWithMostDistance(airports: airports)
+        furtestAirports = connectionHelper.getAirportsWithMostDistance(from: airports)
     }
 }

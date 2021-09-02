@@ -133,7 +133,7 @@ class ConnectionHelperTests: XCTestCase {
         ]
 
         self.measure {
-            guard let result = connectionHelper.getAirportsWithMostDistance(airports: MockAirports) else {
+            guard let result = connectionHelper.getAirportsWithMostDistance(from: MockAirports) else {
                 XCTFail("No result found for the airports with most distance!")
                 return
             }

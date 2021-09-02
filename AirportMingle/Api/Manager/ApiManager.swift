@@ -32,7 +32,7 @@ class APIManager {
                 if let httpURLResponse = response.response as? HTTPURLResponse,
                    !(200...299 ~= httpURLResponse.statusCode) {
                     print("http code: \(httpURLResponse.statusCode)")
-                    let error = NSError(domain: "Wrong ", code: 0, userInfo: nil)
+                    let error = NSError(domain: L10n.Error.somethingWentWrong, code: 0, userInfo: nil)
                     throw error
                 }
                 return response.data
