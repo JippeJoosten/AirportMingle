@@ -403,7 +403,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F3F9E21226CD459D0051C96E /* Build configuration list for PBXNativeTarget "AirportMingle" */;
 			buildPhases = (
-				F3EF88A526CD50B200575F65 /* SwiftGen */,
 				F3F9E1E926CD459B0051C96E /* Sources */,
 				F3F9E1EA26CD459B0051C96E /* Frameworks */,
 				F3F9E1EB26CD459B0051C96E /* Resources */,
@@ -526,27 +525,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		F3EF88A526CD50B200575F65 /* SwiftGen */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = SwiftGen;
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "swiftgen config run --config AirportMingle/Generated/SwiftGen/Config/swiftgen.yml;\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F3F9E1E926CD459B0051C96E /* Sources */ = {
